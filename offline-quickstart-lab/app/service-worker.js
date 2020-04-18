@@ -1,7 +1,6 @@
 const cacheName = 'cache-v1'
 const preCacheResources = [
     '/',
-    '/index.html',
     'index.html',
     'styles/main.css',
     'images/space1.jpg',
@@ -11,6 +10,7 @@ const preCacheResources = [
 
 
 self.addEventListener('install',  event =>{
+    console.log('Installation')
     event.defaultPrevented
     self.skipWaiting()
   console.log('Service worker install event')
